@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Corex.Mapper.Derived.Mapsterx" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Mapper.Infrastructure\Corex.Sample.Mapper.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

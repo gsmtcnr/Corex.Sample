@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Core.Infrastructure\Corex.Sample.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Data.Infrastructure\Corex.Sample.Data.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Corex.Data.Derived.EntityFramework" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Corex.EmailSender.Derived.Smtp" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Core.Infrastructure\Corex.Sample.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\Corex.Sample.EmailSender.Inftrastructure\Corex.Sample.EmailSender.Inftrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
