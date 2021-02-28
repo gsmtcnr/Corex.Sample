@@ -1,13 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Orders\Order\" />
     <Folder Include="Products\Product\" />
-    <Folder Include="Users\User\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Model.ViewModel\Corex.Sample.Model.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>
