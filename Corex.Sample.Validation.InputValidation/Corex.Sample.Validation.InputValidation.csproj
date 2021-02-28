@@ -10,6 +10,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Corex.Validation.Infrastructure" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Corex.Sample.Model.ViewModel\Corex.Sample.Model.ViewModel.csproj" />
   </ItemGroup>
 
