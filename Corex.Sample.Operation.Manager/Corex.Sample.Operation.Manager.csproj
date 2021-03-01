@@ -1,7 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Corex.Operation.Manager" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Mapper.Infrastructure\Corex.Sample.Mapper.Infrastructure.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Operation.BusinessOperation\Corex.Sample.Operation.BusinessOperation.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Operation.DataOperation\Corex.Sample.Operation.DataOperation.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Operation.ValidationOperation\Corex.Sample.Operation.ValidationOperation.csproj" />
+  </ItemGroup>
 
 </Project>

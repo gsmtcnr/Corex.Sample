@@ -1,7 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Orders\Order\" />
+    <Folder Include="Products\Product\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Corex.ExceptionHandling.Derived.Business" Version="1.0.0" />
+    <PackageReference Include="Corex.Operation.Derived.BusinessOperation" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Model.DtoModel\Corex.Sample.Model.DtoModel.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Model.ViewModel\Corex.Sample.Model.ViewModel.csproj" />
+  </ItemGroup>
 
 </Project>

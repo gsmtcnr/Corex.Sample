@@ -2,7 +2,7 @@
 
 namespace Corex.Sample.Model.ViewModel.Products.Product
 {
-    public class ProductPagerInputModel : BasePagerInputModel
+    public class ProductPagerInputModel : BasePagerInputModel, IProductInputModel
     {
     }
 }

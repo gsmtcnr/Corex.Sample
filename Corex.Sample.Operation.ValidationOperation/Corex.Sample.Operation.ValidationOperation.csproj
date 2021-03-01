@@ -1,7 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Corex.Operation.Derived.ValidationOperation" Version="1.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Validation.DtoValidation\Corex.Sample.Validation.DtoValidation.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Validation.InputValidation\Corex.Sample.Validation.InputValidation.csproj" />
+  </ItemGroup>
 
 </Project>
