@@ -4,8 +4,8 @@ using Corex.Sample.Model.ViewModel.Users.User.Inputs;
 
 namespace Corex.Sample.Operation.BusinessOperation.Users.User
 {
-    public interface IUserRegisterInputBusinessOperation  : IBusinessOperation
+    public interface IUserEditInputBusinessOperation : IBusinessOperation
     {
-        UserDto Create(IUserInputModel inputModel);
+        UserDto Edit(UserDto userDto, IUserInputModel inputModel);
     }
 }

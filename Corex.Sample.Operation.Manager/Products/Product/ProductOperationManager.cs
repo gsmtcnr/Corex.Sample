@@ -20,7 +20,7 @@ namespace Corex.Sample.Operation.Manager.Products.Product
             return validationOperation;
         }
 
-        public override IValidationOperation<ProductDto> SetUpdateValidation(ProductDto dto)
+        public override IValidationOperation<ProductDto> SetUpdateValidationOperation(ProductDto dto)
         {
             var validationOperation = IoCManager.Resolve<IProductDtoValidationOperation>();
             validationOperation.SetItem(dto);
