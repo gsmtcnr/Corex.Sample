@@ -77,13 +77,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corex.Sample.Model.ViewMode
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10.Corex.Sample.Operation", "10.Corex.Sample.Operation", "{DA466439-84FE-4B46-B0B5-B2FF5DFF24C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corex.Sample.Operation.BusinessOperation", "Corex.Sample.Operation.BusinessOperation\Corex.Sample.Operation.BusinessOperation.csproj", "{45744C20-0A10-45DD-A9C4-8956377A945E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corex.Sample.Operation.BusinessOperation", "Corex.Sample.Operation.BusinessOperation\Corex.Sample.Operation.BusinessOperation.csproj", "{45744C20-0A10-45DD-A9C4-8956377A945E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corex.Sample.Operation.DataOperation", "Corex.Sample.Operation.DataOperation\Corex.Sample.Operation.DataOperation.csproj", "{C650AC7F-32F2-4FB8-9401-A7C3359C63DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corex.Sample.Operation.DataOperation", "Corex.Sample.Operation.DataOperation\Corex.Sample.Operation.DataOperation.csproj", "{C650AC7F-32F2-4FB8-9401-A7C3359C63DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corex.Sample.Operation.ValidationOperation", "Corex.Sample.Operation.ValidationOperation\Corex.Sample.Operation.ValidationOperation.csproj", "{C43925F9-0574-4C35-80C5-BBBFE6A07133}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corex.Sample.Operation.ValidationOperation", "Corex.Sample.Operation.ValidationOperation\Corex.Sample.Operation.ValidationOperation.csproj", "{C43925F9-0574-4C35-80C5-BBBFE6A07133}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corex.Sample.Operation.Manager", "Corex.Sample.Operation.Manager\Corex.Sample.Operation.Manager.csproj", "{795B86D9-B24B-4BFD-88FF-453868555F00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corex.Sample.Operation.Manager", "Corex.Sample.Operation.Manager\Corex.Sample.Operation.Manager.csproj", "{795B86D9-B24B-4BFD-88FF-453868555F00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operations", "Operations", "{42FFCC60-D022-48A6-9D16-F8BC762CEBB4}"
 EndProject

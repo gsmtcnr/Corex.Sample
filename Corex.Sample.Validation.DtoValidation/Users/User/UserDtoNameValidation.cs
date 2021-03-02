@@ -11,7 +11,6 @@ namespace Corex.Sample.Validation.DtoValidation.Users.User
 
         protected override void Validate()
         {
-            NameRequiredValidation();
             NameLimitValidation();
         }
         private void NameRequiredValidation()

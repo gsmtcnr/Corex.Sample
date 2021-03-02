@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Corex.Sample.Core.Infrastructure\Corex.Sample.Core.Infrastructure.csproj" />
     <ProjectReference Include="..\Corex.Sample.Data.Infrastructure\Corex.Sample.Data.Infrastructure.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Model.ViewModel\Corex.Sample.Model.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>
