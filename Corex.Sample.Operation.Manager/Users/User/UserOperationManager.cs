@@ -69,7 +69,9 @@ namespace Corex.Sample.Operation.Manager.Users.User
             try
             {
                 RegisterInputValidation(inputModel);
-                resultObjectModel = Insert(CreateUserDtoByRegisterInputModel(inputModel));
+                UserDto userDto = CreateUserDtoByRegisterInputModel(inputModel);
+                userDto = EncryptUserDtoPassword(userDto);
+                resultObjectModel = Insert(userDto);
             }
             catch (System.Exception ex)
             {
@@ -81,6 +83,12 @@ namespace Corex.Sample.Operation.Manager.Users.User
             return resultObjectModel;
         }
         #region Private Methods
+        private static UserDto EncryptUserDtoPassword(UserDto userDto)
+        {
+            IUserPasswordEncryptBusinessOperation passwordEncryptBusinessOperation = IoCManager.Resolve<IUserPasswordEncryptBusinessOperation>();
+            userDto = passwordEncryptBusinessOperation.Encrypt(userDto);
+            return userDto;
+        }
         private static UserDto CreateUserDtoByRegisterInputModel(IUserInputModel inputModel)
         {
             IUserRegisterInputBusinessOperation registerBusinessOperation = IoCManager.Resolve<IUserRegisterInputBusinessOperation>();

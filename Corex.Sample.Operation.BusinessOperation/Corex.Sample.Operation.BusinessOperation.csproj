@@ -15,6 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Core.Infrastructure\Corex.Sample.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Encryptor.Infrastructure\Corex.Sample.Encryptor.Infrastructure.csproj" />
     <ProjectReference Include="..\Corex.Sample.Model.DtoModel\Corex.Sample.Model.DtoModel.csproj" />
     <ProjectReference Include="..\Corex.Sample.Model.ViewModel\Corex.Sample.Model.ViewModel.csproj" />
   </ItemGroup>
