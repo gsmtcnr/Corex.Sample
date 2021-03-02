@@ -13,8 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Caching.Derived.MemoryCaching\Corex.Sample.Caching.Derived.MemoryCaching.csproj" />
     <ProjectReference Include="..\Corex.Sample.Core.Infrastructure\Corex.Sample.Core.Infrastructure.csproj" />
     <ProjectReference Include="..\Corex.Sample.Data.Derived.EFSQL\Corex.Sample.Data.Derived.EFSQL.csproj" />
+    <ProjectReference Include="..\Corex.Sample.EmailSender.Derived.SMTPEmailSender\Corex.Sample.EmailSender.Derived.SMTPEmailSender.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Encryptor.Derived.SHAEncryptor\Corex.Sample.Encryptor.Derived.SHAEncryptor.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Mapper.Derived.MapsterMapper\Corex.Sample.Mapper.Derived.MapsterMapper.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Serializer.Derived.NewtonSerializer\Corex.Sample.Serializer.Derived.NewtonSerializer.csproj" />
   </ItemGroup>
 
 </Project>
