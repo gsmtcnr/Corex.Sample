@@ -13,7 +13,6 @@ namespace Corex.Sample.Validation.DtoValidation.Users.User
         {
             RequiredValidation();
             LimitValidation();
-            MinLenghtValidation();
         }
         private void RequiredValidation()
         {
@@ -21,23 +20,7 @@ namespace Corex.Sample.Validation.DtoValidation.Users.User
         }
         private void LimitValidation()
         {
-            StringLimitValidation(nameof(UserDto.Password), Item.Password, 8);
-        }
-        private void MinLenghtValidation()
-        {
-
-            //Base'den sadece format methodunu alıp message'a kendim ekleyebilirim.
-            //Böylece istediğim code ve message değerini set edebilirim.
-            //Örn : 4 karakterden küçük ise..
-            if (!string.IsNullOrEmpty(Item.Password) && Item.Password.Length < 4)
-            {
-                IsValid = false;
-                Messages.Add(new ValidationMessage()
-                {
-                    Code = "Min_Length_4",
-                    Message = CodeFormat(nameof(UserDto.Password))
-                });
-            }
+            StringLimitValidation(nameof(UserDto.Password), Item.Password, 64);
         }
     }
 }

@@ -10,6 +10,7 @@ using Corex.Sample.Model.EntityModel.Users.User;
 using Corex.Sample.Model.ViewModel.Users.User.Inputs;
 using Corex.Sample.Operation.BusinessOperation.Users.User;
 using Corex.Sample.Operation.DataOperation.Users.User;
+using Corex.Sample.Operation.MailOperation.Users.User;
 using Corex.Sample.Operation.ValidationOperation.Users.User;
 using Corex.Validation.Infrastucture;
 using System.Collections.Generic;
@@ -72,6 +73,7 @@ namespace Corex.Sample.Operation.Manager.Users.User
                 UserDto userDto = CreateUserDtoByRegisterInputModel(inputModel);
                 userDto = EncryptUserDtoPassword(userDto);
                 resultObjectModel = Insert(userDto);
+                SendWelcomeMailOperation(resultObjectModel);
             }
             catch (System.Exception ex)
             {
@@ -83,6 +85,14 @@ namespace Corex.Sample.Operation.Manager.Users.User
             return resultObjectModel;
         }
         #region Private Methods
+        private static void SendWelcomeMailOperation(IResultObjectModel<UserDto> resultObjectModel)
+        {
+            if (resultObjectModel.IsSuccess)
+            {
+                IUserRegisterMailOperation welcomeMailOperation = IoCManager.Resolve<IUserRegisterMailOperation>();
+                welcomeMailOperation.Welcome(resultObjectModel.Data);
+            }
+        }
         private static UserDto EncryptUserDtoPassword(UserDto userDto)
         {
             IUserPasswordEncryptBusinessOperation passwordEncryptBusinessOperation = IoCManager.Resolve<IUserPasswordEncryptBusinessOperation>();

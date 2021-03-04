@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Corex.Sample.Data.Derived.EFSQL.Migrations
 {
     [DbContext(typeof(CorexDBContext))]
-    [Migration("20210302193812_CorexDB_Initialize")]
-    partial class CorexDB_Initialize
+    [Migration("20210304210648_DB_Migration_Initialize")]
+    partial class DB_Migration_Initialize
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -138,8 +138,8 @@ namespace Corex.Sample.Data.Derived.EFSQL.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)");
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
 
                     b.Property<int>("Position")
                         .HasColumnType("int");

@@ -19,6 +19,7 @@
     <ProjectReference Include="..\Corex.Sample.EmailSender.Derived.SMTPEmailSender\Corex.Sample.EmailSender.Derived.SMTPEmailSender.csproj" />
     <ProjectReference Include="..\Corex.Sample.Encryptor.Derived.SHAEncryptor\Corex.Sample.Encryptor.Derived.SHAEncryptor.csproj" />
     <ProjectReference Include="..\Corex.Sample.Mapper.Derived.MapsterMapper\Corex.Sample.Mapper.Derived.MapsterMapper.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Operation.Manager\Corex.Sample.Operation.Manager.csproj" />
     <ProjectReference Include="..\Corex.Sample.Serializer.Derived.NewtonSerializer\Corex.Sample.Serializer.Derived.NewtonSerializer.csproj" />
   </ItemGroup>
 

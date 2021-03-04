@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Corex.Sample.Data.Infrastructure.Products.Product;
+using Corex.Sample.Model.EntityModel.Products.Product;
 
 namespace Corex.Sample.Data.Derived.EFSQL.Products.Product
 {
-    class ProductRepository
+    public class ProductRepository : CorexBaseEntityIntRepository<ProductEntity>, IProductRepository
     {
     }
 }

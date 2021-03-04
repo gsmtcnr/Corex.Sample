@@ -10,6 +10,5 @@ namespace Corex.Sample.EmailSender.Inftrastructure
         public string Body { get; set; }
         public string FromEmail { get; set; }
         public string FromName { get; set; }
-        public object DynamicObject { get; set; }
     }
 }

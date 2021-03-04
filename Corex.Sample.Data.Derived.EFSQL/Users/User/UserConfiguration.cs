@@ -18,7 +18,7 @@ namespace Corex.Sample.Data.Derived.EFSQL.Users.User
             entity.Property(m => m.Name).HasMaxLength(32).IsRequired(false);
             entity.Property(m => m.Surname).HasMaxLength(32).IsRequired(false);
             entity.Property(m => m.Email).HasMaxLength(32).IsRequired();
-            entity.Property(m => m.Password).HasMaxLength(8).IsRequired();
+            entity.Property(m => m.Password).HasMaxLength(64).IsRequired();
             entity.Property(m => m.Address).HasMaxLength(512).IsRequired(false);
             base.Map(entity);
         }

@@ -12,6 +12,7 @@
     <ProjectReference Include="..\Corex.Sample.Mapper.Infrastructure\Corex.Sample.Mapper.Infrastructure.csproj" />
     <ProjectReference Include="..\Corex.Sample.Operation.BusinessOperation\Corex.Sample.Operation.BusinessOperation.csproj" />
     <ProjectReference Include="..\Corex.Sample.Operation.DataOperation\Corex.Sample.Operation.DataOperation.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Operation.MailOperation\Corex.Sample.Operation.MailOperation.csproj" />
     <ProjectReference Include="..\Corex.Sample.Operation.ValidationOperation\Corex.Sample.Operation.ValidationOperation.csproj" />
   </ItemGroup>
 

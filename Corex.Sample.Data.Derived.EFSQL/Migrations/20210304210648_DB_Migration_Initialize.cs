@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Corex.Sample.Data.Derived.EFSQL.Migrations
 {
-    public partial class CorexDB_Initialize : Migration
+    public partial class DB_Migration_Initialize : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -46,7 +46,7 @@ namespace Corex.Sample.Data.Derived.EFSQL.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: true),
                     Surname = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: true),
-                    Password = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(512)", maxLength: 512, nullable: true),
                     CreatedTime = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()"),
