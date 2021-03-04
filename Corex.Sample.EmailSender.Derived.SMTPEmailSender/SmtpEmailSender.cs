@@ -6,7 +6,7 @@ using System;
 
 namespace Corex.Sample.EmailSender.Derived.SMTPEmailSender
 {
-    public class SmtpEmailSender : BaseSMTPEmailSender, ICorexEmailSender
+    public class SmtpEmailSender : BaseSMTPEmailSender, IMailSender
     {
         public override SMTPInformation CreateInformation()
         {

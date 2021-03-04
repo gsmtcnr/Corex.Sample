@@ -17,7 +17,7 @@ namespace Corex.Sample.Operation.BusinessOperation.Users.User
             try
             {
                 ICorexEncryptor cipherTextEncryption = IoCManager.Resolve<ICorexEncryptor>();
-                userDto.Password = cipherTextEncryption.Encrypt(GetPasswordSignature(), userDto.Password);
+                userDto.Password = cipherTextEncryption.Encrypt(userDto.Email, userDto.Password);
                 return userDto;
             }
             catch (Exception ex)
@@ -32,6 +32,8 @@ namespace Corex.Sample.Operation.BusinessOperation.Users.User
         }
         private string GetPasswordSignature()
         {
+            //Standart bir şifre kullanmak istersen bunu da belirtebiliriz.
+            //Şifreleme işlemlerinde kullanıcının bir unique bilgisi ile şifrelemek daha doğru olacaktır.
             IConfigurationRoot configurationRoot = IoCManager.Resolve<IConfigurationRoot>();
             return configurationRoot["PasswordSignature"].ToString();
         }

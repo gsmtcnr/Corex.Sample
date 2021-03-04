@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Orders\Order\" />
+    <Folder Include="Products\Product\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Corex.Operation.Derived.BusinessOperation" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Core.Infrastructure\Corex.Sample.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\Corex.Sample.EmailSender.Inftrastructure\Corex.Sample.EmailSender.Inftrastructure.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Model.DtoModel\Corex.Sample.Model.DtoModel.csproj" />
+    <ProjectReference Include="..\Corex.Sample.Model.MailModel\Corex.Sample.Model.MailModel.csproj" />
+  </ItemGroup>
+
+</Project>
