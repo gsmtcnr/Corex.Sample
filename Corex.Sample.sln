@@ -87,9 +87,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corex.Sample.Operation.Mana
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operations", "Operations", "{42FFCC60-D022-48A6-9D16-F8BC762CEBB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corex.Sample.Operation.MailOperation", "Corex.Sample.Operation.MailOperation\Corex.Sample.Operation.MailOperation.csproj", "{8B8BCE3C-1303-4108-909B-92D8CE000785}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corex.Sample.Operation.MailOperation", "Corex.Sample.Operation.MailOperation\Corex.Sample.Operation.MailOperation.csproj", "{8B8BCE3C-1303-4108-909B-92D8CE000785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corex.Sample.Model.MailModel", "Corex.Sample.Model.MailModel\Corex.Sample.Model.MailModel.csproj", "{D054C863-9B7C-427D-878B-0B3F7A0270C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corex.Sample.Model.MailModel", "Corex.Sample.Model.MailModel\Corex.Sample.Model.MailModel.csproj", "{D054C863-9B7C-427D-878B-0B3F7A0270C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corex.Sample.Operation.CacheOperation", "Corex.Sample.Operation.CacheOperation\Corex.Sample.Operation.CacheOperation.csproj", "{61367E9B-4DF1-4657-B8C4-3602E759852A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{D054C863-9B7C-427D-878B-0B3F7A0270C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D054C863-9B7C-427D-878B-0B3F7A0270C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D054C863-9B7C-427D-878B-0B3F7A0270C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61367E9B-4DF1-4657-B8C4-3602E759852A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61367E9B-4DF1-4657-B8C4-3602E759852A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61367E9B-4DF1-4657-B8C4-3602E759852A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61367E9B-4DF1-4657-B8C4-3602E759852A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -239,6 +245,7 @@ Global
 		{42FFCC60-D022-48A6-9D16-F8BC762CEBB4} = {DA466439-84FE-4B46-B0B5-B2FF5DFF24C7}
 		{8B8BCE3C-1303-4108-909B-92D8CE000785} = {42FFCC60-D022-48A6-9D16-F8BC762CEBB4}
 		{D054C863-9B7C-427D-878B-0B3F7A0270C3} = {2A3AE69E-B957-45B7-A3B8-ACAA38574A77}
+		{61367E9B-4DF1-4657-B8C4-3602E759852A} = {42FFCC60-D022-48A6-9D16-F8BC762CEBB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {541C6482-896D-412C-B2AE-D924011F2629}

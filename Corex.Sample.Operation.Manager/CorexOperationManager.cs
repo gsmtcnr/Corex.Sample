@@ -1,10 +1,21 @@
-﻿using Corex.Model.Derived.EntityModel;
+﻿using Corex.Cache.Infrastructure;
+using Corex.ExceptionHandling.Derived.Validation;
+using Corex.ExceptionHandling.Infrastructure.Models;
+using Corex.Mapper.Infrastructure;
+using Corex.Model.Derived.EntityModel;
 using Corex.Model.Infrastructure;
 using Corex.Operation.Derived.ValidationOperation;
+using Corex.Operation.Infrastructure;
+using Corex.Operation.Inftrastructure;
 using Corex.Operation.Manager;
+using Corex.Operation.Manager.Results;
 using Corex.Sample.Core.Infrastructure;
 using Corex.Sample.Mapper.Infrastructure;
+using Corex.Validation.Infrastucture;
+using PagedList.Core;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Corex.Sample.Operation.Manager
 {
@@ -23,5 +34,14 @@ namespace Corex.Sample.Operation.Manager
             //Tüm methodlar delete validation yapmamızı gerektirmiyor.
             return null;
         }
+        public override ICacheSettings SetCacheSettings()
+        {
+            return new CacheSettings
+            {
+                CacheManager = IoCManager.Resolve<ICacheManager>(),
+                Prefix = "Corex"
+            };
+        }
+
     }
 }

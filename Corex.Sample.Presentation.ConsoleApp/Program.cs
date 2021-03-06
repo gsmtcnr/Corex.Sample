@@ -14,8 +14,18 @@ namespace Corex.Sample.Presentation.ConsoleApp
 
             new CorexStartup();
             Console.WriteLine("Hello World!");
-            RegisterUser("sametcinar@msn.com", "Samet123");
 
+            //Register User
+            //RegisterUser("sametcinar@msn.com", "Samet123");
+
+            //User GEt
+            IUserOperationManager userManager = IoCManager.Resolve<IUserOperationManager>();
+            //IResultObjectModel<UserDto> userResult = userManager.Get(10);
+            //SetResult("Get", userResult);
+
+            var pagedList = userManager.GetList(new UserPagerInputModel { });
+
+            var pagedListCached = userManager.GetList(new UserPagerInputModel { });
             Console.ReadLine();
         }
 

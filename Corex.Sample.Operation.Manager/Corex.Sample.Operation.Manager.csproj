@@ -5,10 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Corex.Operation.Manager" Version="1.0.1" />
+    <PackageReference Include="Corex.Operation.Manager" Version="1.0.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Corex.Sample.Caching.Infrastructure\Corex.Sample.Caching.Infrastructure.csproj" />
     <ProjectReference Include="..\Corex.Sample.Mapper.Infrastructure\Corex.Sample.Mapper.Infrastructure.csproj" />
     <ProjectReference Include="..\Corex.Sample.Operation.BusinessOperation\Corex.Sample.Operation.BusinessOperation.csproj" />
     <ProjectReference Include="..\Corex.Sample.Operation.DataOperation\Corex.Sample.Operation.DataOperation.csproj" />
