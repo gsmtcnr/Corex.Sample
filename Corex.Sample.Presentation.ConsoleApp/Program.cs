@@ -14,19 +14,44 @@ namespace Corex.Sample.Presentation.ConsoleApp
 
             new CorexStartup();
             Console.WriteLine("Hello World!");
+            //DummyUser();
+            GetListUser();
 
-            //Register User
-            //RegisterUser("sametcinar@msn.com", "Samet123");
-
-            //User GEt
-            IUserOperationManager userManager = IoCManager.Resolve<IUserOperationManager>();
-            //IResultObjectModel<UserDto> userResult = userManager.Get(10);
-            //SetResult("Get", userResult);
-
-            var pagedList = userManager.GetList(new UserPagerInputModel { });
-
-            var pagedListCached = userManager.GetList(new UserPagerInputModel { });
             Console.ReadLine();
+        }
+
+        private static void DummyUser(int count = 50)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                RegisterUser("deneme" + i + "@corex.com", "deneme" + i);
+            }
+        }
+
+        private static void GetUser(int id)
+        {
+            IUserOperationManager userManager = IoCManager.Resolve<IUserOperationManager>();
+            IResultObjectModel<UserDto> userResult = userManager.Get(id);
+            SetResult("GetUser", userResult);
+            if (userResult.IsSuccess)
+                Console.WriteLine("Email :" + userResult.Data.Email);
+        }
+
+        private static void GetListUser()
+        {
+            IUserOperationManager userManager = IoCManager.Resolve<IUserOperationManager>();
+            var pagedList = userManager.GetList(new UserPagerInputModel
+            {
+                //SearchText="sa"
+            });
+            SetResult("GetListUser", pagedList);
+            if (pagedList.IsSuccess)
+            {
+                foreach (var item in pagedList.Data)
+                {
+                    Console.WriteLine("Email :" + item.Email);
+                }
+            }
         }
 
         private static IResultObjectModel<UserDto> RegisterUser(string email, string password)
