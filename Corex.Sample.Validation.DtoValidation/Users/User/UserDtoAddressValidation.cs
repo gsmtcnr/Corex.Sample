@@ -11,9 +11,9 @@ namespace Corex.Sample.Validation.DtoValidation.Users.User
 
         protected override void Validate()
         {
-            SurnameLimitValidation();
+            AdressLimitValidation();
         }
-        private void SurnameLimitValidation()
+        private void AdressLimitValidation()
         {
             StringLimitValidation(nameof(UserDto.Address), Item.Address, 512);
         }
