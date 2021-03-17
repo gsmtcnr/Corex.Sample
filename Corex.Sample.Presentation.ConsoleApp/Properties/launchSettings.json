@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Corex.Sample.Presentation.ConsoleApp": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

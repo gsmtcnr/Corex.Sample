@@ -12,11 +12,10 @@ namespace Corex.Sample.Presentation.ConsoleApp
         static void Main(string[] args)
         {
 
-            new CorexStartup();
+            //new CorexStartup();
             Console.WriteLine("Hello World!");
             //DummyUser();
-            GetListUser();
-
+         
             Console.ReadLine();
         }
 
